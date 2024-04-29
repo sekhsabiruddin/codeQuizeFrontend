@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom"; // Import HashRouter
 import LoginPage from "./Pages/LoginPage";
 import SingupPage from "./Pages/SingupPage";
 import QuizeBox from "./Pages/QuizeBox";
@@ -11,9 +11,12 @@ import ProtectedRoute from "./Routes/ProtectedRoute";
 import ProtectedAdmin from "./Routes/ProtectedAdmin";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
+      {" "}
+      {/* Use HashRouter instead of BrowserRouter */}
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/sign-up" element={<SingupPage />} />
@@ -63,7 +66,7 @@ function App() {
         pauseOnHover
         theme="light"
       />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
