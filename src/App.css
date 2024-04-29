@@ -1,0 +1,80 @@
+.border-1 {
+  border: 2px solid red;
+}
+.border-2 {
+  border: 2px solid rgb(196, 2, 231);
+}
+.border-3 {
+  border: 2px solid rgb(25, 236, 2);
+}
+.border-4 {
+  border: 2px solid rgb(6, 78, 235);
+}
+.border-5 {
+  border: 2px solid rgb(239, 240, 243);
+}
+.border-6 {
+  border: 2px solid rgb(234, 189, 8);
+}
+.border-7 {
+  border: 2px solid rgb(199, 3, 163);
+}
+.border-8 {
+  border: 2px solid rgb(4, 1, 41);
+}
+.border-9 {
+  border: 2px solid rgb(84, 40, 4);
+}
+
+.buttonCss {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+}
+.solveQuestion {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  color: #fff;
+  background-color: #12b76a;
+}
+.unsolvedQuestion {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  color: #fff;
+  background-color: #fb5353;
+}
+.currentQuestion {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  padding: 10px;
+  color: #110404;
+  background-color: #dddddd;
+}
+
+.optionBorder {
+  border: 0.5px solid #dddddd;
+  border-radius: 4px;
+
+  transition: 0.3s all;
+}
+.optionBorder:hover {
+  background-color: #00969f;
+  color: #fff;
+}
+.questionBoxShadow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: #fff;
+}
+.resultContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.quizeBoxShadow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
