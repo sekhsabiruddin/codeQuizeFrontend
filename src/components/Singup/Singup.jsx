@@ -44,7 +44,7 @@ const Singup = () => {
         formData, // Form data to be sent
         config // Configuration for the request
       );
-      console.log("singup response ", response);
+
       // Display success message from the server response
       toast.success(response.data.message);
       // Resetting form fields after successful submission
@@ -54,7 +54,6 @@ const Singup = () => {
       setAvatar("");
       navigate("/");
     } catch (err) {
-      console.log(err);
       toast.error(err.response.data.message);
     }
   };

@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const ProfileContent = ({ active }) => {
   return (
-    <div className="w-full">
+    <div className="w-full  overflow-x-hidden">
       {active === 1 && <MainProfile />}
       {active === 2 && <Contest />}
       {active === 3 && <Performance />}

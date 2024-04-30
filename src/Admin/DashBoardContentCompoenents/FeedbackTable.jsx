@@ -17,9 +17,7 @@ const FeedbackTable = () => {
   useEffect(() => {
     const fetchFeedbackData = async () => {
       try {
-        // console.log("Fetch api is: ", `${server}feedback/all-feedback`);
         const response = await axios.get(`${server}/feedback/all-feedback`);
-        console.log("All febback", response);
         setFeedbackData(response.data);
       } catch (error) {
         console.error("Error fetching feedback data:", error);

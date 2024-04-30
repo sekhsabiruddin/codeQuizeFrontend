@@ -8,7 +8,7 @@ const AdminHeader = () => {
   const admin = useSelector((state) => state.admin.admin);
 
   return (
-    <div className="h-[10vh] px-2 sm:px-6 bg-[#3321C8] w-full  ">
+    <div className="h-[10vh] px-2 sm:px-6 bg-[#3321C8] w-full">
       <nav className="flex justify-between w-full">
         <div className="h-[8vh] w-[200px] flex item-center justify-center">
           <img src={Logo} alt="" className="w-full h-full" />

@@ -33,7 +33,6 @@ const AdminLogin = () => {
         window.location.reload(true);
       })
       .catch((err) => {
-        console.log(err);
         if (err && err.response && err.response.data) {
           toast.error(err.response.data);
         }

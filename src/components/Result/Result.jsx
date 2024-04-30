@@ -8,10 +8,11 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { server } from "../../server";
 import { useDispatch } from "react-redux";
+import { RiFontFamily } from "react-icons/ri";
 
 const Result = () => {
   let song = new Audio("../../audio/contragtulation_sound.mp3");
-  console.log("song", song);
+
   const quizeQuestions = useSelector((state) => state.quizeQuestion.questions);
   const user = useSelector((state) => state.user.user);
   const { isQuizeMode } = useSelector((state) => state.quizemode);
@@ -25,7 +26,7 @@ const Result = () => {
 
   useEffect(() => {
     let song = new Audio(congratulationSound);
-    console.log("song", song);
+
     if (quizeQuestions && quizeQuestions.length > 0) {
       let newScore = 0;
       let newSolvedCount = 0;
@@ -83,7 +84,6 @@ const Result = () => {
         unsolved,
         not_attend,
       });
-      console.log("Response:", response.data);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -98,7 +98,7 @@ const Result = () => {
     <>
       <Confetti />
       <div className="border-8 resultContainer w-full flex items-center justify-center h-screen">
-        <div className="w-[80%] relative bg-[#fff] h-[90vh]">
+        <div className="w-[95%] lg:w-[80%] relative bg-[#fff] h-[90vh]">
           <div className="absolute right-1 text-7xl hover:text-blue-500 cursor-pointer">
             <IoIosCloseCircleOutline
               size={30}
@@ -106,7 +106,10 @@ const Result = () => {
               onClick={handleTheCross}
             />
           </div>
-          <h2 className="text-center text-bold mt-4 text-[2rem] text-[#0DC143] text-semibold">
+          <h2
+            className="text-center text-bold mt-4 text-[2rem] text-[#0DC143] text-semibold"
+            style={{ fontFamily: "Roboto" }}
+          >
             Your Score is: {score}
           </h2>
           <div className="flex items-center justify-center mt-4">

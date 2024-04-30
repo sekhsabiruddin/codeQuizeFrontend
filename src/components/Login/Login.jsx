@@ -26,13 +26,11 @@ const Login = () => {
         { withCredentials: true }
       )
       .then((res) => {
-        console.log("Login in", res);
         toast.success("Login Success!");
         navigate("/");
         // window.location.reload(true);
       })
       .catch((err) => {
-        console.log(err);
         toast.error(err.response.data.message);
       });
   };

@@ -9,7 +9,7 @@ import FeedbackTable from "../DashBoardContentCompoenents/FeedbackTable";
 const DashBoardContent = ({ active }) => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full overflow-hidden">
         {active === 1 ? <AdminProfile /> : ""}
         {active === 2 ? <AllQuestion /> : ""}
         {active === 3 ? <AddQuestion /> : ""}

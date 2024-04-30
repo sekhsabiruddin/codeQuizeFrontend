@@ -21,7 +21,6 @@ import axios from "axios";
 const ProfileSidebar = ({ setActive, active }) => {
   const navigate = useNavigate();
   const logoutHandle = async () => {
-    console.log("Hi....");
     try {
       const { data } = await axios.post(`${server}/user/logout`, null, {
         withCredentials: true,

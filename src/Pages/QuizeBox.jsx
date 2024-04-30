@@ -9,7 +9,6 @@ import Header from "../components/Header/Header";
 const QuizeBox = () => {
   const { loading, user } = useSelector((state) => state.user);
   const { isQuizeMode } = useSelector((state) => state.quizemode);
-  console.log("isQuizeMode", isQuizeMode);
 
   if (loading) {
     return <Loading />;

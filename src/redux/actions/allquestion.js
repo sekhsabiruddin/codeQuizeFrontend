@@ -8,7 +8,6 @@ export const getAllQuestion = () => async (dispatch) => {
     });
 
     const { data } = await axios.get(`${server}/question/get-all-questions`);
-    console.log("All the question", data);
 
     dispatch({
       type: "getAllQuestionSuccess",

@@ -93,7 +93,7 @@ const MainProfile = () => {
   return (
     <div>
       <div className="flex justify-center w-full">
-        <div className="relative">
+        <div className="relative mt-4">
           <img
             src={`${backend_url}${user && user.avatar}`}
             className="w-[150px] h-[150px] rounded-full object-cover border-[3px] border-[#3ad132]"

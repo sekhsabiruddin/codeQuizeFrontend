@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 // Timer component
 const Timer = ({ remainingTime }) => (
   <div className="px-8 flex justify-end">
@@ -181,6 +181,22 @@ const QuizeBoxLeft = () => {
                 </i>
               </button>
             </div>
+            {/* submit button start here  */}
+            <div className="p-2 lg:hidden">
+              <Link to="/result">
+                <div
+                  className="text-center text-[1.1rem] opacity-100 hover:opacity-80"
+                  style={{ fontFamily: "Roboto", fontWeight: 400 }}
+                >
+                  <input
+                    className="w-[60%] bg-[#3a24db] h-[40px] border border-[#3a24db] text-center rounded-[3px] mt-8 cursor-pointer text-[#fff]"
+                    type="submit"
+                    value="Submit"
+                  />
+                </div>
+              </Link>
+            </div>
+            {/* submit button start end  */}
           </div>
         )}
       </div>

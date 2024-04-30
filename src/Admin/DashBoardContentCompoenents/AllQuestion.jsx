@@ -58,8 +58,6 @@ const AllQuestion = () => {
     setPage(0);
   };
   const togglePriority = (questionId) => {
-    console.log("priorityIds", priorityIds);
-
     const updatedPriorityIds = [...priorityIds];
     const questionIndex = updatedPriorityIds.indexOf(questionId);
     if (questionIndex === -1) {

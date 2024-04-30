@@ -7,7 +7,7 @@ const Start = () => {
   };
   return (
     <div className="border-opacity-0 w-full h-[90vh]">
-      <div className="w-[90%] lg:w-[60%] px-4 py-3 mx-auto h-[90vh] bg-[#fff] text-[#877d7d]">
+      <div className="w-[95%] lg:w-[60%] px-4 py-3 mx-auto h-[90vh] bg-[#fff] text-[#877d7d]">
         <h1 className="mb-1 text-[1.1rem]">
           1. Welcome to <b className="text-[#000000cc]">CoderQuiz</b>
         </h1>
