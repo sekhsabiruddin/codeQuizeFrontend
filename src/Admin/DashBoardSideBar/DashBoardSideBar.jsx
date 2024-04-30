@@ -142,14 +142,13 @@ const DashBoardSideBar = ({ setActive, active }) => {
 
       <div
         className="single_item flex items-center cursor-pointer w-full mb-8"
-        // onClick={logoutHandler}
+        onClick={logoutHandler}
       >
         <AiOutlineLogin size={20} color={active === 8 ? "red" : "black"} />
         <span
           className={`hidden lg:block  pl-3 ${
             active === 8 ? "text-[red]" : "text-black"
           } `}
-          onClick={logoutHandler}
         >
           Log out
         </span>
