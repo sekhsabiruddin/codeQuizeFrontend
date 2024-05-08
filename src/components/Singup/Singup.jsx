@@ -20,6 +20,10 @@ const Singup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!validator.isEmail(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
     if (!validator.isLength(password, { min: 6 })) {
       toast.error("Password should be at least 6 characters long");
       return;

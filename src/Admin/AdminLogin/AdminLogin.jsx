@@ -15,9 +15,6 @@ const AdminLogin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    debugger;
-
     await axios
       .post(
         `${server}/admin/login`,

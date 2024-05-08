@@ -6,8 +6,7 @@ export const loadQuestions = () => async (dispatch) => {
     dispatch({ type: "loadQuestionRequest" });
 
     const response = await axios.get(`${server}/question/get-random-question`);
-    console.log("Response data", response);
-
+    console.log("random question", response.data);
     const mainData = response.data.map((value, index) => {
       if (index == 0) {
         return { ...value, status: "current" };

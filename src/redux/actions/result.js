@@ -10,7 +10,7 @@ export const getAllResult = () => async (dispatch) => {
     const { data } = await axios.get(`${server}/result/get-result`, {
       withCredentials: true, // Include cookies in the request
     });
-    console.log("Result data", data);
+  
     dispatch({
       type: "getAllResultSuccess",
       payload: data,
